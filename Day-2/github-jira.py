@@ -11,11 +11,11 @@ app = Flask(__name__)
 @app.route('/createJira', methods=['POST'])
 def createJira():
 
-    url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
+    url = "https://bahuguna00aman.atlassian.net/jira/software/projects/SCRUM/boards/1"
 
-    API_TOKEN=""
+    API_TOKEN="ATATT3xFfGF07-0JOJWSa5folAzVg5drBK3-HPzSwA7fKRtskbtDH_YjKa6mbw6aQPIwElr27_HfaSlrQRaBZeca-Dt0m-B6Ny-w2rxPpBelsWO2LqixqQ7wO6fMpqZoX5LORA9LG_USBA2R6MBkFJtBcqXJqXVMWJOE90eI-ARkTCjMfHBXA0U=2603BF06"
 
-    auth = HTTPBasicAuth("", API_TOKEN)
+    auth = HTTPBasicAuth("bahuguna00aman@gmail.com", API_TOKEN)
 
     headers = {
         "Accept": "application/json",
@@ -40,7 +40,7 @@ def createJira():
              "version": 1
         },
         "project": {
-           "key": "AB"
+           "key": "SCRUM"
         },
         "issuetype": {
             "id": "10006"
